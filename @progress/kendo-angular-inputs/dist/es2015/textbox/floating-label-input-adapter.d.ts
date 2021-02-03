@@ -1,0 +1,19 @@
+/**-----------------------------------------------------------------------------------------
+* Copyright © 2019 Progress Software Corporation. All rights reserved.
+* Licensed under commercial license. See LICENSE.md in the project root for more information
+*-------------------------------------------------------------------------------------------*/
+import { Observable } from 'rxjs';
+import { NgControl } from '@angular/forms';
+import { EventEmitter } from '@angular/core';
+/**
+ * @hidden
+ */
+export declare class FloatingLabelInputAdapter {
+    private component;
+    onFocus: Observable<any> | EventEmitter<any>;
+    onBlur: Observable<any> | EventEmitter<any>;
+    autoFill: Observable<any> | EventEmitter<any>;
+    onValueChange: Observable<any> | EventEmitter<any>;
+    focusableId: string;
+    constructor(component: any, formControl?: NgControl);
+}
